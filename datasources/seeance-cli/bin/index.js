@@ -32,6 +32,6 @@ if(operation == 'generate') {
     }
 } else if(operation == 'publish') {
     publish.publish(process.cwd()).then(() => {
-
+        process.exit(0);
     })
 }
