@@ -44,7 +44,7 @@ exports.publish = async function (path) {
         return repo.push();
     }).then((resolve, reject) => {
         console.log("PUBLISH: Cleaning up...");
-        return rimraf(fldr, resolve);
+        rimraf(fldr, {}, resolve);
     });
 }
 
