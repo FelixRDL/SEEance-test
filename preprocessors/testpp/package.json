@@ -20,7 +20,12 @@
       "install-test"
     ],
     "produces": [],
-    "config_schema": {},
+    "config_schema": {
+      "name_to_replace": {
+        "default": "The name to be replaced in the joke",
+        "type": "string",
+        "default": "John Doe"
+      }},
     "type": "preprocessor"
   }
 }
